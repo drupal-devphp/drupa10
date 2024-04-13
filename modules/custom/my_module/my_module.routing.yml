@@ -1,0 +1,6 @@
+my_module.user_display:
+  path: '/my-user-display'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\UserDisplayController::displayUser'
+  requirements:
+    _permission: 'access content'

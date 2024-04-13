@@ -1,0 +1,9 @@
+services:
+  custom_user_info.event_subscriber:
+    class: Drupal\custom_user_info\EventSubscriber\CustomEventSubscriber
+    tags:
+      - { name: event_subscriber }
+
+  custom_user_info.current_user_email:
+    class: Drupal\custom_user_info\CustomUserService
+    arguments: ['@current_user']

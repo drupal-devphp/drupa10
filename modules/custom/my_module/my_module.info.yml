@@ -1,0 +1,5 @@
+name: My Module
+type: module
+description: "Displays the current logged-in user username."
+core_version_requirement: ^10
+core: 10.x

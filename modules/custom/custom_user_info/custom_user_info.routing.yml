@@ -1,0 +1,31 @@
+custom_user_info.controller:
+  path: '/custom/user-info'
+  defaults:
+    _controller: '\Drupal\custom_user_info\Controller\CustomUserInfoController::content'
+    _title: 'Custom User Info'
+  requirements:
+    _permission: 'access content'
+
+custom_user_info.form:
+  path: '/custom-form-example'
+  defaults:
+    _form: '\Drupal\custom_user_info\Form\CustomFormExampleForm'
+    _title: 'Custom Form Example'
+  requirements:
+    _permission: 'access content'
+
+custom_user_info.display_email:
+  path: '/custom-user-service/display-email'
+  defaults:
+    _controller: '\Drupal\custom_user_info\Controller\CustomUserController::displayEmail'
+    _title: 'Display Current User Email'
+  requirements:
+    _permission: 'access content'
+
+custom_user_info.multistepform:
+  path: '/multistep-form'
+  defaults:
+    _form: '\Drupal\custom_user_info\Form\MyMultiStepForm'
+    _title: 'Custom Form Example'
+  requirements:
+    _permission: 'access content'

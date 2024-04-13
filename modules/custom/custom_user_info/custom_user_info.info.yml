@@ -1,0 +1,6 @@
+name: 'Custom User Info'
+type: module
+description: 'Displays the current logged-in users username.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom
+version: 1.0
