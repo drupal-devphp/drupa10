@@ -1,4 +1,5 @@
 <?php
+
 namespace Drupal\custom_user_info\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
