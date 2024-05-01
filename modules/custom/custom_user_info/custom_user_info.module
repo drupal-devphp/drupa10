@@ -1,0 +1,56 @@
+<?php
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_user_info_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_employee_form' || $form_id == 'node_employee_edit_form') {
+    $form['#validate'][] = 'custom_user_info_employee_form_validate';
+  }
+}
+
+function custom_user_info_employee_form_validate(&$form, &$form_state) {
+  $form_value = $form_state->getValue('field_name')[0]['value'];
+
+  if(strlen($form_value) < 5) {
+    $form_state->setErrorByName('field_name', t('Name field should containt more than 5 characters'));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ 
+function custom_user_info_entity_bundle_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type, $bundle) {
+  //Here test is the content type, and i added a field {field_name}
+  if ($entity_type->id() === 'node' && $bundle === 'employee') {
+    if (isset($fields['field_salary'])) {
+      // Use the ID as defined in the annotation of the constraint definition
+      $fields['field_salary']->addConstraint('contains_dollar');
+    }
+  }
+}
+*/
