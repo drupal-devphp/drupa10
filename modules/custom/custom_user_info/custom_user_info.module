@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Implements hook_form_alter().
  */
@@ -18,32 +17,9 @@ function custom_user_info_employee_form_validate(&$form, &$form_state) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Implements hook_entity_bundle_field_info_alter().
- 
+ */
 function custom_user_info_entity_bundle_field_info_alter(&$fields, \Drupal\Core\Entity\EntityTypeInterface $entity_type, $bundle) {
   //Here test is the content type, and i added a field {field_name}
   if ($entity_type->id() === 'node' && $bundle === 'employee') {
@@ -53,4 +29,3 @@ function custom_user_info_entity_bundle_field_info_alter(&$fields, \Drupal\Core\
     }
   }
 }
-*/
