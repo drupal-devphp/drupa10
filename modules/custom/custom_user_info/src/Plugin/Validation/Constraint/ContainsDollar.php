@@ -15,6 +15,6 @@ use Symfony\Component\Validator\Constraint;
  */
 class ContainsDollar extends Constraint {
   public $dollarMessage = 'The string "%string%" must contain the $ character.';
-  public $notemptyMessage = 'The string "%string%" must not be empty.';
-  public $lengthMessage = 'The string "%string%" must have exactly 6 characters.';
+  // public $notemptyMessage = 'The string "%string%" must not be empty.';
+  // public $lengthMessage = 'The string "%string%" must have exactly 6 characters.';
 }

@@ -21,11 +21,3 @@ custom_user_info.display_email:
     _title: 'Display Current User Email'
   requirements:
     _permission: 'access content'
-
-custom_user_info.multistepform:
-  path: '/multistep-form'
-  defaults:
-    _form: '\Drupal\custom_user_info\Form\MyMultiStepForm'
-    _title: 'Custom Form Example'
-  requirements:
-    _permission: 'access content'

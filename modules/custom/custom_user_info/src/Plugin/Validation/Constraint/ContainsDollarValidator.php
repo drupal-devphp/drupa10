@@ -18,7 +18,7 @@ class ContainsDollarValidator extends ConstraintValidator {
         $this->context->addViolation($constraint->dollarMessage, ['%string%' => $value]);
       }
 
-      // Check if the value has a length of exactly 6 characters.
+      /* // Check if the value has a length of exactly 6 characters.
       if (strlen($value) !== 6) {
         $this->context->addViolation($constraint->lengthMessage, ['%string%' => $value]);
       }
@@ -27,6 +27,7 @@ class ContainsDollarValidator extends ConstraintValidator {
       if (empty($value)) {
         $this->context->addViolation($constraint->notemptyMessage, ['%string%' => $value]);
       }
+      */
     }
   }
 }
