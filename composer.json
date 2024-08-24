@@ -95,7 +95,7 @@
                 "  * Get involved with the Drupal community:",
                 "      https://www.drupal.org/getting-involved",
                 "  * Remove the plugin that prints this message:",
-                "      composer removes drupal/core-project-message"
+                "      composer remove drupal/core-project-message"
             ]
         }
     }
