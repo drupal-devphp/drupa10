@@ -1,0 +1,5 @@
+services:
+  phone_number_mask.twig_extension:
+    class: Drupal\phone_number_mask\TwigExtension\PhoneNumberMaskExtension
+    tags:
+      - { name: twig.extension }
